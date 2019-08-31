@@ -14,7 +14,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
   <!-- The Grid -->
   <div class="w3-row-padding">
   
@@ -182,6 +181,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
 	
+	<div class="w3-bar w3-container w3-card w3-white w3-margin-bottom">
+		<a href="#" class="w3-bar-item w3-button">London</a>
+		<a href="#" class="w3-bar-item w3-button">Paris</a>
+		<a href="#" class="w3-bar-item w3-button">Tokyo</a>
+	</div>
+	
       <div class="w3-container w3-card w3-white w3-margin-bottom" >
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
         <div class="w3-container">
@@ -310,6 +315,15 @@ function openTab(pagename) {
     x[i].style.display = "none"; 
   }
   document.getElementById(pagename).style.display = "block"; 
+}
+
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {  
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
   
